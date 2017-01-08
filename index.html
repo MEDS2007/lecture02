@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>MEDS2007 Website, Lecture 01</title>
+
+	<meta name="description" content="MEDS2007, Lecture 1">
+	<meta name="author" content="Dave Everitt">
+
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+	<link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css" integrity="sha384-dNpIIXE8U05kAbPhy3G1cz+yZmTzA6CY8Vg/u2L9xRnHjJiAK76m2BIEaSEV+/aU" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/moon.css"><!-- beige -->
+	<link rel="stylesheet" href="lib/css/zenburn.css"><!-- syntax highlighting of code -->
+	<link rel="stylesheet" href="css/ctec3905.css"><!-- custom styles -->
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement( 'link' );
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName( 'head' )[0].appendChild( link );
+	</script>
+</head>
+<body>
+	<div class="reveal">
+		<div class="slides">
+
+			<section data-markdown>
+				## MEDS2007: Website
+				
+				# **Lecture 1** 
+
+				**Dave Everitt**
+				deveritt@dmu.ac.uk
+			</section>
+
+			<section>
+				<section data-markdown>
+          # HTML, CSS, JavaScript
+          
+          ![HTML, CSS, JavaScript logos](images/html-css-js.png)
+          
+          - HTML: **what** - defines the content
+          - CSS: **how** - specifies the layout/presentation
+          - JavaScript: **when** - programmes the behaviour
+        </section>
+
+        <section data-markdown>
+          # HTML + CSS
+          
+          These will be your **main focus**.
+          
+          But before we go further, a little **background information**…
+        </section>		
+      </section>
+
+      <section>
+        <section data-markdown class="crammed left-align">
+          # A brief **history** of HTML
+
+          - **SGML** is the basis (title, h1-6, p, ol, ul...)
+          - **1965** Ted Nelson, hyperlink
+          - **1987** Hypercard uses local hyperlinks (Bill Atkinson, Apple)
+          - **HTML** devised by Tim Berner-Lee (TBL) when at CERN
+          - **1989** TBL creates HTML/www on NeXT (for **collaborative research**)
+          - **1989** global hypertext project - the **W**orld**W**ide**W**eb (www)
+          - **1991** the Internet first carries the www
+
+          [The birth of the web (CERN)](https://home.cern/topics/birth-web)  
+					Dave Raggett (co-editor, HTML 4 specification) [A history of HTML](https://www.w3.org/People/Raggett/book4/ch02.html)
+        </section>		
+
+        <section data-markdown>
+          # The first visual web browser (1993)
+          
+          [The **Mosaic** web browser](https://www.w3.org/MarkUp/tims_editor)
+        </section>
+
+        <section>
+          <iframe style="height:640px; width:100%" src="https://www.w3.org/MarkUp/tims_editor"></iframe>
+        </section>
+
+        <section data-markdown>
+          # Latest version: **HTML5**
+          
+          *Semantic* tags (they **do** what they **say**) e.g.  
+					`header`, `figure` & `figcaption`, `section`, `footer`…
+          
+          [The History of HTML5 (infographic) Matt Silverman, 2012](http://mashable.com/2012/07/17/history-html5/)
+        </section>
+
+      </section>		
+
+      <section>
+        <section data-markdown class="crammed left-align">
+          # A **history** of CSS: 1
+          
+          - **1994** first draft of **Cascading HTML Style Sheets**, Håkon Wium Lie (CERN)
+          - **1995** discussions on the www-style mailing list influence CSS development
+          - HTML removed from name, style sheets also for **other markup languages**
+          - **1995** W3C HTML Editorial Review Board set up for HTML specifications
+          - **1996** Microsoft Internet Explorer is the first browser to support CSS
+          - **1996** CSS Level 1 W3C Recommendation (CSS1)
+          - **1996** W3C forms Cascading Style Sheets and Formatting Properties Working Group
+          
+          [A Brief History of CSS](http://www.css-class.com/a-brief-history-of-css/)  
+        </section>		
+
+        <section data-markdown class="left-align">
+          # A **history** of CSS: 1.1
+          
+          > Tim Berners-Lee wrote his NeXT browser/editor in such a way that he could determine the style with a simple style sheet. However, he didn't publish the syntax for the style sheets, considering it a matter for each browser to decide how to best display pages to its users.
+          
+          [A brief history of CSS until 2016](https://www.w3.org/Style/CSS20/history.html)
+        </section>
+
+        <section data-markdown class="left-align">
+          # A **history** of CSS: 1.2
+          
+          > In 1993, NCSA Mosaic, the browser that made the Web popular, came out. Stylewise, however, it was a backward step because it only allowed its users to change certain colors and fonts […] writers of Web pages complained that they didn't have enough influence over how their pages looked. One of the first questions from an author new to the Web was how to change fonts and colors of elements.
+          
+          [A brief history of CSS until 2016](https://www.w3.org/Style/CSS20/history.html)
+        </section>
+
+        <section data-markdown class="crammed left-align">
+          # A **history** of CSS: 1.3
+          
+          there were **tensions** between authors and implementors:
+          
+          > …it has been a constant source of delight for me over the past year to get to continually tell hordes (literally) of people who want to -- strap yourselves in, here it comes -- control what their documents look like in ways that would be trivial in TeX, Microsoft Word, and every other common text processing environment: "**Sorry, you're screwed.**"
+          
+          [Marc Andreessen, 1994](http://​www.​webhistory.​org/​www.lists/​www-talk.1994q1/​0648.html), programmer, NCSA Mosaic. Later co-founder of Netscape, eager to please authors. In 1994, he announced the first beta release of Mozilla (later Netscape Navigator, and the code behind Firefox).
+        </section>
+
+        <section data-markdown class="crammed left-align">
+          # A **history** of CSS: 2
+          
+          - **1997** CSS Working Group creates CSS 2 specification
+          - **1998** CSS level 2 published as a W3C Recommendation (CSS2)
+          - **1998** the Opera browser released which supports CSS
+          - **2000** W3C CSS3 Working Draft
+          - **2011** W3C releases CSS 2.1 fixed errors, better browser matching
+          - **2014** W3C Candidate Recommendation CSS Syntax Module Level 3
+          - **2017** CSS 3 and browser support continues to evolve…
+          
+          [W3C CSS Syntax Module Level 3](https://www.w3.org/TR/css-syntax-3/)
+        </section>
+      </section>
+
+			<section>
+				<section data-markdown class="left-align">
+					# **CSS 1** (1996)
+					
+					Supports: **font** properties, **text** attributes, text **alignment**, **tables**, **images**, text and background **color**, word/letter/line **spacing**, **margins**, **borders**, **padding**, **positioning**, **id**entification and **class**ification of groups of CSS styles.
+					
+					In a **CSS file** (.css):
+					```css
+					#my-id { background-color: green; }
+					.my-class { text-align: center; }
+					```
+					
+					In an **HTML file** (.html):
+					```html
+					&lt;element id="my-id"&gt;
+					&lt;body class="my-class"&gt;
+					```
+				</section>
+
+				<section data-markdown class="left-align">
+					# **CSS 2** (1998)
+					
+					New capabilities including: **z-index**, **media** types (e.g. braille, print, speech, projection, tv, etc.), **bidirectional** text, absolute, relative and fixed **positioning**, support for **aural** style sheets.
+				</section>
+
+				<section data-markdown class="left-align">
+					# **CSS 3** (2000, 2014…)
+					
+					Broken into **modules**. 2011-2012, four modules released as formal recommendations: color, selectors level 3, namespaces and **media queries**.
+					
+					CSS3 now includes:  
+					**transitions**, **animation** and **transformations**.
+					
+					Because CSS level 3 is separated into modules, there will be **no single CSS 4 release**—[W3C CSS Snapshot 2015](https://www.w3.org/TR/css3-roadmap/)
+          
+					See W3Schools (*separate* from the W3C) guide for:  
+					[CSS transitions](http://www.w3schools.com/css/css3_transitions.asp), [CSS transforms](http://www.w3schools.com/cssref/css3_pr_transform.asp) and [CSS animation](http://www.w3schools.com/css/css3_animations.asp)
+				</section>
+      </section>
+
+      <section>
+				<section data-markdown class="crammed left-align">
+					# HOW WEBSITES WORK: 1
+					
+					**back end (you don't need to know this):**  
+					‘server’—handles your request for a page, does any necessary processing or retrieval (say from a database) finds images and other files, and sends it all to your browser.
+					
+					**front end (you will learn this):**  
+					‘client’ (e.g. usually a web browser)—receives content from the server and displays the pages you view, renders the HTML, applies CSS styles and handles JavaScript.
+        </section>
+				<section data-markdown class="left-align">
+          # HOW WEBSITES WORK: 2
+          
+          An HTML5 document begins with a **document type**:
+          
+          ```html
+          &lt;!doctype html&gt;
+          ```
+          then the **main** (parent) element:
+          ```html
+          &lt;html&gt;
+          ```
+          Then some **information** the browser needs:
+          ```html
+          &lt;head&gt;
+					```
+          Then what actually **appears** in the browser:
+          ```html
+          &lt;body&gt;
+          ```
+        </section>
+				<section data-markdown class="left-align">
+          # HOW WEBSITES WORK: 3
+          
+          So **all** websites have the following **HTML tags**:
+          
+          ```html
+          &lt;!doctype html&gt;
+          &lt;html&gt;
+            &lt;head&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+            &lt;/body&gt;
+          &lt;/html&gt;
+          ```
+        </section>
+				<section data-markdown class="left-align">
+          # HOW WEBSITES WORK: 4
+          
+          Most content is between **matching pairs** of HTML tags:
+          
+          ```html
+          &lt;p&gt;My text in a pararaph&lt;/p&gt;
+          ```
+        </section>
+				<section data-markdown class="left-align">
+          # HOW WEBSITES WORK: 5
+          
+          An HTML **hyperlink** looks like this:
+          
+          ```html
+          &lt;a href="another-page.html"&gt;Go to another page&lt;/a&gt;
+          ```
+        </section>
+				<section data-markdown class="left-align">
+          # HOW WEBSITES WORK: 6
+          
+          An HTML **image tag** looks like this:
+          
+          ```html
+          &lt;img src="my-images/a-lovely-cat.png"&gt;
+          ```
+          
+          The `img` tag doesn't need 'closing'.
+        </section>
+			</section>
+
+			<section data-markdown class="left-align">
+				# SUMMARY:
+				
+				- **HTML** you only need the basics
+				- **CSS** learn the syntax, use only what you need
+				- **indent your code** as you go, with 2 spaces
+				- **JavaScript** mainly for advanced interaction
+			</section>
+
+			<section data-markdown class="left-align">
+        # ONLINE RESOURCES
+
+        Two **reliable** sources for quick **reference** and **learning**:
+
+        - [W3Schools HTML](http://www.w3schools.com/html/)
+        - [W3Schools CSS](http://www.w3schools.com/css/)
+
+        - [Codecademy HTML Fundamentals](https://www.codecademy.com/courses/html-one-o-one/0/1)
+        - [Codecademy HTML & CSS for Beginners](https://www.codecademy.com/en/tracks/htmlcss)
+			</section>
+
+	<script src="lib/js/head.min.js"></script>
+	<script src="js/reveal.js"></script>
+
+	<script>
+		// More info https://github.com/hakimel/reveal.js#configuration
+		Reveal.initialize({
+			history: true,
+			controls: true,
+			progress: true,
+			center: true,
+			touch: true,
+			keyboard: true,
+			maxScale: 0.82,
+			previewLinks: false,
+			transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+			// More info https://github.com/hakimel/reveal.js#dependencies
+			dependencies: [
+				{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+				{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+				{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+				{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+				{ src: 'plugin/zoom-js/zoom.js', async: true },
+				{ src: 'plugin/notes/notes.js', async: true }
+				// { src: 'plugin/menu/menu.js'}
+			]
+			// see https://github.com/denehyg/reveal.js-menu
+			// menu: {
+			// 	themes: false,
+			// 	transitions: false
+			// }
+		});
+	</script>
+</body>
+</html>
