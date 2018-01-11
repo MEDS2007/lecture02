@@ -4,6 +4,8 @@
 
 **11 January 2018**
 
-This is the presentation for the first lecture. The HTML, CSS and JavaScript slideshow library [reveal.js](http://lab.hakim.se/reveal-js/) was used to create the slides. 
+This is the presentation for the first lecture.
 
-You can [view this presentation online](https://meds2007.github.io/lecture01/) on GitHub pages.
+[View this presentation online](https://meds2007.github.io/lecture01/) on GitHub pages.
+
+The HTML/CSS/JavaScript slideshow library [reveal.js](http://lab.hakim.se/reveal-js/) was used to create the slides.
