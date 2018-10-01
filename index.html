@@ -30,437 +30,423 @@
 	</script>
 </head>
 <body>
-	<div class="reveal">
-		<div class="slides">
+<div class="reveal">
+<div class="slides">
 
-			<section data-markdown>
-				## MEDS2007: Website
-				
-				# **Lecture 1** 
+  <section data-markdown>
+      ## MEDS2007: Website
 
-				**Dave Everitt**
-				deveritt@dmu.ac.uk
-			</section>
+      # **Lecture 1** 
 
-			<section>
-				<section data-markdown>
-          # HTML, CSS, JavaScript
-          
-          ![HTML, CSS, JavaScript logos](images/html-css-js.png)
-          
-          - HTML: **what** - defines *content*
-          - CSS: **how** - specifies *layout/presentation*
-          - JavaScript: **when** - programmes *behaviour*
-        </section>
+      **Dave Everitt**
+      deveritt@dmu.ac.uk
+  </section>
 
-        <section data-markdown>
-          # **HTML** + **CSS**
-          
-          These will be your **main focus**.
-          
-          But before we go further, a little **background information** on these two web technologies…
-        </section>		
-      </section>
-
-      <section>
-        <section data-markdown class="crammed left-align">
-          # A brief **history** of HTML
-
-          - **SGML** is the basis (title, h1-6, p, ol, ul...)
-          - **1965** Ted Nelson, hyperlink
-          - **1987** Hypercard uses local hyperlinks (Bill Atkinson, Apple)
-          - **HTML** devised by Tim Berner-Lee (TBL) when at CERN
-          - **1989** TBL creates HTML/www on NeXT (for **collaborative research**)
-          - **1989** global hypertext project - the **W**orld**W**ide**W**eb (www)
-          - **1991** the Internet first carries the www
-
-          [The birth of the web (CERN)](https://home.cern/topics/birth-web)  
-					[A history of HTML](https://www.w3.org/People/Raggett/book4/ch02.html) Dave Raggett 1998, (HTML 4 specification)
-        </section>		
-
-        <section>
-          <p><a href="https://www.w3.org/MarkUp/tims_editor">original screenshot of Tim Berners-Lee's browser</a></p>
-          <iframe style="height:640px; width:100%" src="https://www.w3.org/MarkUp/tims_editor"></iframe>
-        </section>
-
-        <section data-markdown>
-          # Mosaic (1993)
-          
-          The first visual web browser 
-          
-          ![The NCSA browser](images/NCSA-Mosaic.png)
-        </section>
-
-        <section data-markdown>
-          # Mosaic (again)
-          
-          The first visual web browser (on a Mac)
-          
-          ![The NCSA browser](images/NCSAMosaic1-Mac.png)
-        </section>
-
-        <section data-markdown>
-          # Latest version: **HTML5**
-          
-          ## **Semantic tags do** what they **say**!
-          
-          `header`, `figure`+`figcaption`, `nav`, `section`, `footer`…
-          
-          For a great infographic see  
-          [The History of HTML5, Matt Silverman, 2012](http://mashable.com/2012/07/17/history-html5/)
-        </section>
-
-      </section>		
-
-      <section class="left-align">
-        <section data-markdown class="smalltext">
-          # A **history** of CSS: 1
-          
-          - **1994** first draft of **Cascading HTML Style Sheets**, Håkon Wium Lie (CERN)
-          - **1995** discussions on the www-style mailing list influence CSS development
-          - HTML removed from name, style sheets also for **other markup languages**
-          - **1995** W3C HTML Editorial Review Board set up for HTML specifications
-          - **1996** Microsoft Internet Explorer is the first browser to support CSS
-          - **1996** CSS Level 1 W3C Recommendation (CSS1)
-          - **1996** W3C forms Cascading Style Sheets and Formatting Properties Working Group
-          
-          [A Brief History of CSS](http://www.css-class.com/a-brief-history-of-css/)  
-        </section>		
-
-        <section data-markdown>
-          # A **history** of CSS: 1.1
-          
-          > Tim Berners-Lee wrote his NeXT browser/ editor in such a way that he could **determine the style with a simple style sheet**. However, **he didn't publish the syntax for the style sheets**, considering it a matter for each browser to decide how to best display pages to its users.
-          
-          more…
-        </section>
-
-        <section data-markdown>
-          # A **history** of CSS: 1.2
-          
-          > In 1993, NCSA Mosaic, the browser that made the Web popular, came out. Stylewise, however, it was a backward step because it only allowed its users to change certain colors and fonts […] **writers of Web pages complained that they didn't have enough influence over how their pages looked**. One of the first questions from an author new to the Web was how to change fonts and colors of elements.
-          
-          [A brief history of CSS until 2016](https://www.w3.org/Style/CSS20/history.html)
-        </section>
-
-        <section data-markdown class="smalltext">
-          # A **history** of CSS: 1.3
-          
-          there were **tensions** between authors and implementors:
-          
-          > …it has been a constant source of delight for me over the past year to… tell hordes (literally) of people who want to… control what their documents look like in ways that would be trivial in TeX, Microsoft Word, and every other common text processing environment: "**Sorry, you're screwed.**"
-          
-          —Marc Andreessen, 1994, programmer NCSA Mosaic browser. Later as co-founder of the Netscape browser, he was more eager to please authors. In 1994, he announced the first beta release of Mozilla (later Netscape Navigator, and the code behind **Firefox**). In [The CSS saga](https://www.w3.org/Style/LieBos2e/history/Overview.html), chapter in: Håkon Wium Lie and Bert Bos, "Cascading Style Sheets, designing for the Web".
-        </section>
-
-        <section data-markdown class="smalltext">
-          # A **history** of CSS: 2
-          
-          - **1997** CSS Working Group creates **CSS 2** specification
-          - **1998** CSS level 2 published as a **W3C** Recommendation (CSS2)
-          - **1998** the **Opera** browser released which supports CSS
-          - **2000** W3C CSS3 Working Draft
-          - **2011** W3C releases **CSS 2.1** fixed errors, better browser matching
-          - **2014** W3C Candidate Recommendation CSS Syntax Module Level 3
-          - **2017** CSS 3 and browser support **continues to evolve**…
-          
-          Warning! TMI: [W3C CSS Syntax Module Level 3](https://www.w3.org/TR/css-syntax-3/) (scroll to see the comments)
-        </section>
-      </section>
-
-			<section class="left-align">
-				<section data-markdown>
-          # **CSS 1** (1996)
-          
-          Introduces basic **styling** `property-value` pairs
-          
-          **font** properties, **text** attributes, text **alignment**, **tables**, **images**, text and background **color**, word/letter/line **spacing**, **margins**, **borders**, **padding**, **positioning**.
-
-          `id`entification and `class`ification of groups of CSS styles…
-				</section>
-
-				<section data-markdown>
-          # **CSS 1** (1996)
-          
-          ## **IMPORTANT SLIDE !!**
-          
-          `#ID` and `.class` in HTML and CSS
-          
-          In the **CSS file** (.css `{curly braces}`):
-          
-          ```css
-          #my-id { background-color: green; }
-          .my-class { text-align: center; }
-          ```
-          
-          In an **HTML file** (.html `&lt;angle brackets&gt;`)
-          
-          ```html
-          &lt;element id="my-id"&gt;
-          &lt;body class="my-class"&gt;
-          ```
-				</section>
-
-				<section data-markdown>
-					# **CSS 2** (1998)
-					
-					New capabilities including: **z-index**, **media** types (e.g. braille, print, speech, projection, tv, etc.), **bidirectional** text, absolute, relative and fixed **positioning**, support for **aural** style sheets.
-				</section>
-
-				<section data-markdown>
-          # **CSS 3** (2000, 2014…)
-          
-          Broken into **modules**. 2011-2012, four modules released as formal recommendations: color, selectors level 3, namespaces and **media queries**.
-          
-          CSS3 now includes:  
-          `transition`, `animation` and `transform`.
-          
-          CSS level 3 is separated into modules, so there will be  
-          **no single CSS 4 release**—see the [W3C CSS Snapshot 2015](https://www.w3.org/TR/css3-roadmap/)
-          
-          See W3Schools (*separate* from the W3C) guide for:  
-					[CSS transitions](http://www.w3schools.com/css/css3_transitions.asp), [CSS transforms](http://www.w3schools.com/cssref/css3_pr_transform.asp) and [CSS animation](http://www.w3schools.com/css/css3_animations.asp)
-				</section>
-      </section>
-
-      <section class="left-align">
-				<section data-markdown>
-          # HOW WEBSITES WORK: 0
-          
-          ## **BACK** END
-          
-          (you **won't** need to learn this for the module)
-          
-          > A web **server** handles your **request** for a page, does any background **processing** and **retrieval** (say from a database) finds **HTML**, **CSS** and **JavaScript** files  (`.html`,`.css`, `.js`), plus **images** and other assets, and sends it all to **your browser**.
-        </section>
-
-				<section data-markdown>
-          # HOW WEBSITES WORK: 1
-          
-          ## **FRONT** END
-          
-          you **will need to learn this** for the module:
-          
-          > A 'client' (usually a **web browser** like Chrome)—receives **files** from the server and **displays** the pages you requested by rendering the **HTML**, applying **CSS** styles to the HTML, and running any **JavaScript** programming.
-        </section>
-
-				<section data-markdown>
-          # HOW WEBSITES WORK: 2
-          
-          An **HTML5** document begins with a **document type**:
-          
-          ```html
-          &lt;!doctype html&gt;
-          ```
-          then the **main** (parent) element:
-          ```html
-          &lt;html&gt;
-          ```
-          Then some **information** the browser needs:
-          ```html
-          &lt;head&gt;
-					```
-          Then what actually **appears** in the browser:
-          ```html
-          &lt;body&gt;
-          ```
-        </section>
-
-				<section data-markdown>
-          # HOW WEBSITES WORK: 3
-          
-          **All websites** have the following fundamental **HTML tags**
-          
-          ```html
-          &lt;!doctype html&gt;
-
-          &lt;html&gt;
-
-            &lt;head&gt;
-            &lt;/head&gt;
-
-            &lt;body&gt;
-            &lt;/body&gt;
-
-          &lt;/html&gt;
-          ```
-        </section>
-
-				<section data-markdown>
-          # HOW WEBSITES WORK: 4
-          
-          ## **IMPORTANT SLIDE !!**
-          
-          Most content is **between matching pairs** of HTML tags:
-          
-          ```html
-          &lt;h1&gt;A page heading&lt;/h1&gt;
-
-          &lt;p&gt;Some text in a paragraph&lt;/p&gt;
-
-          &lt;footer&gt;The box at the bottom&lt;/footer&gt;
-          ```
-        </section>
-
-        <section data-markdown>
-          # HOW WEBSITES WORK: 5
-          
-          Some tags **don't need 'closing'** e.g. the `img` tag:
-          
-          ```html
-          &lt;img src="my-images/my-fwuffy-kitten.png"&gt;
-          ```
-          The only other **'self-closing' tags** you might use are:
-
-          ```html
-          &lt;br&gt; &lt;-- a line break --&gt;
-
-          &lt;input&gt; &lt;-- for forms --&gt;
-          ```
-        </section>
-
-        <section data-markdown>
-          # HOW WEBSITES WORK: 6
-          
-          An HTML **hyperlink** goes to **another page** or to  
-          a **specific section** marked by an HTML `id` attribute:
-          
-          ```html
-          &lt;a href="another-page.html"&gt;Go to another page&lt;/a&gt;
-
-          &lt;a href="#my-section"&gt;Jump to an ID on the page&lt;/a&gt;
-
-          &lt;section id="my-section"&gt;
-            &lt;p&gt;A paragraph inside the section&lt;/p&gt;
-          &lt;/section&gt;
-          ```
-        </section>
-
-				<section data-markdown>
-          # HOW WEBSITES WORK: 7
-          
-          ## **IMPORTANT SLIDE !!**
-          
-          HTML tags are often **nested inside** other HTML tags:
-          
-          ```html
-          &lt;header&gt;
-            &lt;h1&gt;The main heading&lt;/h1&gt;
-          &lt;/header&gt;  
-
-          &lt;section&gt;
-            &lt;h2&gt;A section heading&lt;/h2&gt;
-            &lt;p&gt;Some text in a paragraph&lt;/p&gt;
-          &lt;/section&gt;
-          ```
-        </section>
-
-        <section data-markdown>
-          # HOW WEBSITES WORK: 8
-          
-          You can add **comments** in your code:
-          
-          ```html
-          &lt;-- The figure tag is for image/captions boxes --&gt;
-
-          &lt;figure&gt;
-            &lt;-- The img tag goes here --&gt;
-            &lt;-- The figcaption tag goes here --&gt;
-          &lt;/figure&gt;
-          ```
-
-          Text between `&lt;--` and `--&gt;` won't show on screen.
-        </section>
-      </section>
+  <section>
+  	<section data-markdown>
+      # HTML, CSS, JavaScript
       
-      <section data-markdown class="left-align">
-        # TIDY CODE
-          
-        ## **IMPORTANT SLIDE !!**
-        
-        - **indent all your code** as you go, with **2 spaces**!
-        - **HTML** in `.html` files (`&lt;angle brackets&gt;`)
-        - **CSS** in `.CSS` files (`{curly braces}`)
-        
-        ## KEEPING **CODE TIDY** WILL HELP YOU **A LOT** :-)
-			</section>
+      ![HTML, CSS, JavaScript logos](images/html-css-js.png)
       
-      <section data-markdown class="left-align">
-        # TIDY FILES
-          
-        ## **IMPORTANT SLIDE !!**
-        
-        - **YES** all file &amp; folder names **lower-case**!
-        - **YES** all **resized images** in an `images` folder!
-        - **NO** Word documents or Photoshhop files!
-        
-        ## KEEPING **FILES TIDY** WILL HELP YOU **A LOT** :-)
-			</section>
+      - HTML: **what** - defines *content*
+      - CSS: **how** - specifies *layout/presentation*
+      - JavaScript: **when** - programmes *behaviour*
+    </section>
 
-			<section data-markdown class="left-align">
-        # SUMMARY:
-        
-        ## THE **THREE FRONT-END LANGUAGES**
-        
-        - **HTML** you only need the basics
-        - **CSS** learn the syntax, just use what you need
-        - **JavaScript** optional for user interaction
-
-        Keep them **all in separate files**
-			</section>
+    <section data-markdown>
+      # **HTML** + **CSS**
       
-			<section class="left-align">
-        <section data-markdown>
-          # ONLINE RESOURCES: 1
-          
-          **Codecademy** for independent **learning**:
+      These will be your **main focus**.
+      
+      But before we go further, a little **background information** on these two web technologies…
+    </section>		
+  </section>
+
+  <section>
+    <section data-markdown class="crammed left-align">
+      # A brief **history** of HTML
+
+      - **SGML** is the basis (title, h1-6, p, ol, ul...)
+      - **1965** Ted Nelson, hyperlink
+      - **1987** Hypercard uses local hyperlinks (Bill Atkinson, Apple)
+      - **HTML** devised by Tim Berner-Lee (TBL) when at CERN
+      - **1989** TBL creates HTML/www on NeXT (for **collaborative research**)
+      - **1989** global hypertext project - the **W**orld**W**ide**W**eb (www)
+      - **1991** the Internet first carries the www
+
+      [The birth of the web (CERN)](https://home.cern/topics/birth-web)  
+  		[A history of HTML](https://www.w3.org/People/Raggett/book4/ch02.html) Dave Raggett 1998, (HTML 4 specification)
+    </section>		
+    <section>
+      <p><a href="https://www.w3.org/MarkUp/tims_editor">original screenshot of Tim Berners-Lee's browser</a></p>
+      <iframe style="height:640px; width:100%" src="https://www.w3.org/MarkUp/tims_editor"></iframe>
+    </section>
+    <section data-markdown>
+      # Mosaic (1993)
+      
+      The first visual web browser 
+      
+      ![The NCSA browser](images/NCSA-Mosaic.png)
+    </section>
+    <section data-markdown>
+      # Mosaic (again)
+      
+      The first visual web browser (on a Mac)
+      
+      ![The NCSA browser](images/NCSAMosaic1-Mac.png)
+    </section>
+    <section data-markdown>
+      # Latest version: **HTML5**
+      
+      ## **Semantic tags do** what they **say**!
+      
+      `header`, `figure`+`figcaption`, `nav`, `section`, `footer`…
+      
+      For a great infographic see  
+      [The History of HTML5, Matt Silverman, 2012](http://mashable.com/2012/07/17/history-html5/)
+    </section>
+  </section>		
+
+  <section class="left-align">
+    <section data-markdown class="smalltext">
+      # A **history** of CSS: 1
+      
+      - **1994** first draft of **Cascading HTML Style Sheets**, Håkon Wium Lie (CERN)
+      - **1995** discussions on the www-style mailing list influence CSS development
+      - HTML removed from name, style sheets also for **other markup languages**
+      - **1995** W3C HTML Editorial Review Board set up for HTML specifications
+      - **1996** Microsoft Internet Explorer is the first browser to support CSS
+      - **1996** CSS Level 1 W3C Recommendation (CSS1)
+      - **1996** W3C forms Cascading Style Sheets and Formatting Properties Working Group
+      
+      [A Brief History of CSS](http://www.css-class.com/a-brief-history-of-css/)  
+    </section>		
+    <section data-markdown>
+      # A **history** of CSS: 1.1
+      
+      > Tim Berners-Lee wrote his NeXT browser/ editor in such a way that he could **determine the style with a simple style sheet**. However, **he didn't publish the syntax for the style sheets**, considering it a matter for each browser to decide how to best display pages to its users.
+      
+      more…
+    </section>
+    <section data-markdown>
+      # A **history** of CSS: 1.2
+      
+      > In 1993, NCSA Mosaic, the browser that made the Web popular, came out. Stylewise, however, it was a backward step because it only allowed its users to change certain colors and fonts […] **writers of Web pages complained that they didn't have enough influence over how their pages looked**. One of the first questions from an author new to the Web was how to change fonts and colors of elements.
+      
+      [A brief history of CSS until 2016](https://www.w3.org/Style/CSS20/history.html)
+    </section>
+    <section data-markdown class="smalltext">
+      # A **history** of CSS: 1.3
+      
+      there were **tensions** between authors and implementors:
+      
+      > …it has been a constant source of delight for me over the past year to… tell hordes (literally) of people who want to… control what their documents look like in ways that would be trivial in TeX, Microsoft Word, and every other common text processing environment: "**Sorry, you're screwed.**"
+      
+      —Marc Andreessen, 1994, programmer NCSA Mosaic browser. Later as co-founder of the Netscape browser, he was more eager to please authors. In 1994, he announced the first beta release of Mozilla (later Netscape Navigator, and the code behind **Firefox**). In [The CSS saga](https://www.w3.org/Style/LieBos2e/history/Overview.html), chapter in: Håkon Wium Lie and Bert Bos, "Cascading Style Sheets, designing for the Web".
+    </section>
+    <section data-markdown class="smalltext">
+      # A **history** of CSS: 2
+      
+      - **1997** CSS Working Group creates **CSS 2** specification
+      - **1998** CSS level 2 published as a **W3C** Recommendation (CSS2)
+      - **1998** the **Opera** browser released which supports CSS
+      - **2000** W3C CSS3 Working Draft
+      - **2011** W3C releases **CSS 2.1** fixed errors, better browser matching
+      - **2014** W3C Candidate Recommendation CSS Syntax Module Level 3
+      - **2017** CSS 3 and browser support **continues to evolve**…
+      
+      Warning! TMI: [W3C CSS Syntax Module Level 3](https://www.w3.org/TR/css-syntax-3/) (scroll to see the comments)
+    </section>
+  </section>
+
+  <section class="left-align">
+  	<section data-markdown>
+      # **CSS 1** (1996)
+      
+      Introduces basic **styling** `property-value` pairs
+      
+      **font** properties, **text** attributes, text **alignment**, **tables**, **images**, text and background **color**, word/letter/line **spacing**, **margins**, **borders**, **padding**, **positioning**.
+
+      `id`entification and `class`ification of groups of CSS styles…
+  	</section>
+  	<section data-markdown>
+      # **CSS 1** (1996)
+      
+      ## **IMPORTANT SLIDE !!**
+      
+      `#ID` and `.class` in HTML and CSS
+      
+      In the **CSS file** (.css `{curly braces}`):
+      
+      ```css
+      #my-id { background-color: green; }
+      .my-class { text-align: center; }
+      ```
+      
+      In an **HTML file** (.html `&lt;angle brackets&gt;`)
+      
+      ```html
+      &lt;element id="my-id"&gt;
+      &lt;body class="my-class"&gt;
+      ```
+  	</section>
+  	<section data-markdown>
+      # **CSS 2** (1998)
+
+      New capabilities including: **z-index**, **media** types (e.g. braille, print, speech, projection, tv, etc.), **bidirectional** text, absolute, relative and fixed **positioning**, support for **aural** style sheets.
+  	</section>
+  	<section data-markdown>
+      # **CSS 3** (2000, 2014…)
+      
+      Broken into **modules**. 2011-2012, four modules released as formal recommendations: color, selectors level 3, namespaces and **media queries**.
+      
+      CSS3 now includes:  
+      `transition`, `animation` and `transform`.
+      
+      CSS level 3 is separated into modules, so there will be  
+      **no single CSS 4 release**—see the [W3C CSS Snapshot 2015](https://www.w3.org/TR/css3-roadmap/)
+      
+      See W3Schools (*separate* from the W3C) guide for:  
+  		[CSS transitions](http://www.w3schools.com/css/css3_transitions.asp), [CSS transforms](http://www.w3schools.com/cssref/css3_pr_transform.asp) and [CSS animation](http://www.w3schools.com/css/css3_animations.asp)
+  	</section>
+  </section>
+
+<!-- HTML5 INTRODUCTION -->
+
+  <section class="left-align">
+  	<section data-markdown>
+      # HOW WEBSITES WORK: 0
+      
+      ## **BACK** END
+      
+      (you **won't** need to learn this for the module)
+      
+      > A web **server** handles your **request** for a page, does any background **processing** and **retrieval** (say from a database) finds **HTML**, **CSS** and **JavaScript** files  (`.html`,`.css`, `.js`), plus **images** and other assets, and sends it all to **your browser**.
+    </section>
+  	<section data-markdown>
+      # HOW WEBSITES WORK: 1
+      
+      ## **FRONT** END
+      
+      you **will need to learn this** for the module:
+      
+      > A 'client' (usually a **web browser** like Chrome)—receives **files** from the server and **displays** the pages you requested by rendering the **HTML**, applying **CSS** styles to the HTML, and running any **JavaScript** programming.
+    </section>
+    <!-- SHARED WITH CTEC3905 -->
+  	<section data-markdown>
+      # HOW WEBSITES WORK: 2
+      
+      An **HTML5** document begins with a **document type**:
+      
+      ```html
+      &lt;!doctype html&gt;
+      ```
+      then the **main** (parent) element:
+      ```html
+      &lt;html&gt;
+      ```
+      Then some **information** the browser needs:
+      ```html
+      &lt;head&gt;
+  		```
+      Then what actually **appears** in the browser:
+      ```html
+      &lt;body&gt;
+      ```
+    </section>
+  	<section data-markdown>
+      # HOW WEBSITES WORK: 3
+      
+      **All websites** have the following fundamental **HTML tags**
+      
+      ```html
+      &lt;!doctype html&gt;
+
+      &lt;html&gt;
+
+        &lt;head&gt;
+        &lt;/head&gt;
+
+        &lt;body&gt;
+        &lt;/body&gt;
+
+      &lt;/html&gt;
+      ```
+    </section>
+  	<section data-markdown>
+      # HOW WEBSITES WORK: 4
+      
+      ## **IMPORTANT SLIDE !!**
+      
+      Visible content is between **matching pairs** of HTML tags:
+
+      ```html
+      &lt;header&gt;The box at the top&lt;/header&gt;
+
+      &lt;p&gt;Some text in a paragraph&lt;/p&gt;
+
+      &lt;footer&gt;The box at the bottom&lt;/footer&gt;
+      ```
+    </section>
+    <section data-markdown>
+      # HOW WEBSITES WORK: 5
+      
+      Some tags **don't need 'closing'** e.g. the `img` tag:
+      
+      ```html
+      &lt;img src="my-images/my-lovely-horse.png"&gt;
+      ```
+      The only other **'self-closing' tags** you might use are:
+
+      ```html
+      &lt;br&gt; &lt;-- a line break --&gt;
+
+      &lt;input&gt; &lt;-- for forms --&gt;
+      ```
+    </section>
+    <section data-markdown>
+      # HOW WEBSITES WORK: 6
   
-          - [HTML Fundamentals](https://www.codecademy.com/courses/html-one-o-one/0/1)
-          - [HTML &amp; CSS for Beginners](https://www.codecademy.com/en/tracks/htmlcss)
-
-          Codecademy **JavaScript**  
-          (only if you're **ambitious** or want to **programme**!):
-
-          - [Introduction to JavaScript](https://www.codecademy.com/learn/introduction-to-javascript)
-          - [HTML+JavaScript+CSS](https://www.codecademy.com/courses/html-javascript-css/0/1)
-        </section>
-        <section data-markdown>
-          # ONLINE RESOURCES: 2
-
-          **Mozilla Developer Network (MDN)** always has the  
-          most **up-to-date** and authoritative information:
-          
-          - [Introduction to HTML](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML)
-          - [Introduction to CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS)
-          - [JavaScript basics](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics)
-
-          **MDN** is usually **more detailed** than other sources
-        </section>
-        <section data-markdown>
-          # ONLINE RESOURCES: 3
-
-          **W3Schools** for quick **reference** (not all up-to-date):
+      A **hyperlink** goes to **another page**, **website**, or  
+      **specific section** on the same page marked by an HTML `id` attribute:
+      
+      ```html
+      &lt;a href="http://xkcd.com"&gt;Go to another website&lt;/a&gt;
   
-          - [W3Schools HTML](http://www.w3schools.com/html/)
-          - [W3Schools CSS](http://www.w3schools.com/css/)
+      &lt;a href="another-page.html"&gt;Go to another page&lt;/a&gt;
+  
+      &lt;a href="#my-section"&gt;Jump to an ID on the page&lt;/a&gt;
+  
+      &lt;section id="my-section"&gt;
+        &lt;p&gt;A paragraph inside the section&lt;/p&gt;
+      &lt;/section&gt;
+      ```
+    </section>
+  	<section data-markdown>
+      # HOW WEBSITES WORK: 7
+      
+      ## **IMPORTANT SLIDE !!**
+      
+      most HTML tags are **nested inside** other HTML tags:
+      
+      ```html
+      &lt;header&gt;
+        &lt;h1&gt;The main heading&lt;/h1&gt;
+      &lt;/header&gt;  
 
-          **BEWARE!** avoid inline `style` attributes in **HTML tags!**  
-          *NOOOOOOOOOOOOOOOOO!*
-          
-          **ALL** CSS style code should be in your `{.css}` file!  
-          **NOT** in your `&lt;.html&gt;` file!
-        </section>
-      </section>
+      &lt;section&gt;
+        &lt;h2&gt;A section heading&lt;/h2&gt;
+        &lt;p&gt;Some text in a paragraph&lt;/p&gt;
+      &lt;/section&gt;
+      ```
+    </section>
+    <section data-markdown>
+      # HOW WEBSITES WORK: 8
+      
+      You can add **HTML comments** in your code:
+      
+      ```html
+      &lt;-- The figure tag is for image/captions boxes --&gt;
 
-			<section data-markdown>
-        # THE END
-        
-        ## **THANK YOU** FOR YOUR **ATTENTION**
+      &lt;figure&gt;
+        &lt;-- The img tag goes here --&gt;
+        &lt;-- The figcaption tag goes here --&gt;
+      &lt;/figure&gt;
+      ```
 
-        :-)
-      </section>
+      Text between `&lt;--` and `--&gt;` won't show on screen.
+    </section>
+  </section>
 
-      <script src="lib/js/head.min.js"></script>
+  <section data-markdown class="left-align">
+    # TIDY CODE
+      
+    ## **IMPORTANT SLIDE !!**
+    
+    - **indent all your code** as you go, with **2 spaces**!
+    - **HTML** in `.html` files (`&lt;angle brackets&gt;`)
+    - **CSS** in `.CSS` files (`{curly braces}`)
+    
+    ## KEEPING **CODE TIDY** WILL HELP YOU **A LOT** :-)
+  </section>
+
+  <section data-markdown class="left-align">
+    # TIDY FILES
+      
+    ## **IMPORTANT SLIDE !!**
+    
+    - **YES** all file &amp; folder names **lower-case**!
+    - **YES** all **resized images** in an `images` folder!
+    - **NO** Word documents or Photoshhop files!
+    
+    ## KEEPING **FILES TIDY** WILL HELP YOU **A LOT** :-)
+  </section>
+
+  <section data-markdown class="left-align">
+    # SUMMARY:
+    
+    ## THE **THREE FRONT-END LANGUAGES**
+    
+    - **HTML** you only need the basics
+    - **CSS** learn the syntax, just use what you need
+    - **JavaScript** optional for user interaction
+
+    Keep them **all in separate files**
+  </section>
+
+  <section class="left-align">
+    <section data-markdown>
+      # ONLINE RESOURCES: 1
+      
+      **Codecademy** for independent **learning**:
+
+      - [HTML Fundamentals](https://www.codecademy.com/courses/html-one-o-one/0/1)
+      - [HTML &amp; CSS for Beginners](https://www.codecademy.com/en/tracks/htmlcss)
+
+      Codecademy **JavaScript**  
+      (only if you're **ambitious** or want to **programme**!):
+
+      - [Introduction to JavaScript](https://www.codecademy.com/learn/introduction-to-javascript)
+      - [HTML+JavaScript+CSS](https://www.codecademy.com/courses/html-javascript-css/0/1)
+    </section>
+    <section data-markdown>
+      # ONLINE RESOURCES: 2
+
+      **Mozilla Developer Network (MDN)** always has the  
+      most **up-to-date** and authoritative information:
+      
+      - [Introduction to HTML](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML)
+      - [Introduction to CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS)
+      - [JavaScript basics](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics)
+
+      **MDN** is usually **more detailed** than other sources
+    </section>
+    <section data-markdown>
+      # ONLINE RESOURCES: 3
+
+      **W3Schools** for quick **reference** (not all up-to-date):
+
+      - [W3Schools HTML](http://www.w3schools.com/html/)
+      - [W3Schools CSS](http://www.w3schools.com/css/)
+
+      **BEWARE!** avoid inline `style` attributes in **HTML tags!**  
+      *NOOOOOOOOOOOOOOOOO!*
+      
+      **ALL** CSS style code should be in your `{.css}` file!  
+      **NOT** in your `&lt;.html&gt;` file!
+    </section>
+  </section>
+
+  <section data-markdown>
+    # THE END
+    
+    ## **THANK YOU** FOR YOUR **ATTENTION**
+
+    :-)
+  </section>
+</div>
+
+  <script src="lib/js/head.min.js"></script>
 	<script src="js/reveal.js"></script>
 
 	<script>
