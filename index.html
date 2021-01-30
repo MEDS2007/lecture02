@@ -40,10 +40,6 @@
 
     **Simon Mills (module leader)**: smills@dmu.ac.uk
 
-    **Fania Raczinski**: fania.raczinski@dmu.ac.uk
-
-    **Dave Everitt**: deveritt@dmu.ac.uk
-
     [Lecture 2 slide index](https://github.com/MEDS2007/lecture02#meds2007)
   </section>
 
@@ -55,7 +51,7 @@
       
       - HTML: **what** - defines *content*
       - CSS: **how** - specifies *layout/presentation*
-      - JavaScript: **when** - programmes *behaviour*
+      - JavaScript: **when** - codes *interaction*
     </section>
 
     <section data-markdown>
@@ -72,7 +68,7 @@
       # A brief **history** of HTML
 
       - **SGML** is the basis (title, h1-6, p, ol, ul...)
-      - **1965** Ted Nelson, hyperlink
+      - **1965** Ted Nelson, the hyperlink (today's version is not as rich)
       - **1987** Hypercard uses local hyperlinks (Bill Atkinson, Apple)
       - **HTML** devised by Tim Berner-Lee (TBL) when at CERN
       - **1989** TBL creates HTML/www on NeXT (for **collaborative research**)
@@ -160,7 +156,7 @@
       - **2014** W3C Candidate Recommendation CSS Syntax Module Level 3
       - **2017** CSS 3 and browser support **continues to evolve**…
       
-      Warning! TMI: [W3C CSS Syntax Module Level 3](https://www.w3.org/TR/css-syntax-3/) (scroll to see the comments)
+      TMI: [W3C CSS Syntax Module Level 3](https://www.w3.org/TR/css-syntax-3/) (Warning! Big, official document!)
     </section>
   </section>
 
@@ -198,21 +194,20 @@
   	<section data-markdown>
       # **CSS 2** (1998)
 
-      New capabilities including: **z-index**, **media** types (e.g. braille, print, speech, projection, tv, etc.), **bidirectional** text, absolute, relative and fixed **positioning**, support for **aural** style sheets.
+      New capabilities including: **z-index** (layer control), **media** types (e.g. braille, print, speech, projection, tv, etc.), **bidirectional** text, absolute, relative and fixed **positioning**, support for **aural** style sheets.
   	</section>
   	<section data-markdown>
       # **CSS 3** (2000, 2014…)
       
-      Broken into **modules**. 2011-2012, four modules released as formal recommendations: color, selectors level 3, namespaces and **media queries**.
+      Broken into **modules**. 2011-2012, four modules released as formal recommendations: color, selectors level 3, namespaces and [**media queries**](https://www.w3schools.com/css/css_rwd_mediaqueries.asp). [CanIUse](https://caniuse.com/) shows which CSS features various browsers support (e.g. see [`scroll-snap`](https://caniuse.com/?search=scroll%20snap)).
       
-      CSS3 now includes:  
-      `transition`, `animation` and `transform`.
+      CSS3 now includes (W3Schools links, *not* the W3C):  
+      [`transition`](http://www.w3schools.com/css/css3_transitions.asp), [`transform`](http://www.w3schools.com/cssref/css3_pr_transform.asp), [`animation`](http://www.w3schools.com/css/css3_animations.asp).
       
-      CSS level 3 is separated into modules, so there will be  
-      **no single CSS 4 release**—see the [W3C CSS Snapshot 2015](https://www.w3.org/TR/css3-roadmap/)
+      Now CSS level 3 is separated into **modules**, there will be  
+      **no single CSS 4 release**—see the [current W3C CSS Snapshot](https://www.w3.org/TR/css3-roadmap/)
       
-      See W3Schools (*separate* from the W3C) guide for:  
-  		[CSS transitions](http://www.w3schools.com/css/css3_transitions.asp), [CSS transforms](http://www.w3schools.com/cssref/css3_pr_transform.asp) and [CSS animation](http://www.w3schools.com/css/css3_animations.asp)
+      For **what's coming next**, see the [Fairly Stable Modules](https://www.w3.org/TR/css3-roadmap/#fairly-stable)
   	</section>
   </section>
 
@@ -226,7 +221,7 @@
       
       (you **won't** need to learn this for the module)
       
-      > A web **server** handles your **request** for a page, does any background **processing** and **retrieval** (say from a database) finds **HTML**, **CSS** and **JavaScript** files  (`.html`,`.css`, `.js`), plus **images** and other assets, and sends it all to **your browser**.
+      > A web **server** handles your **request** for a page, does background **processing** and **retrieval** (e.g. from a database) finds `.html`,`.css` and `.js` **text files**, plus **images** and other assets, and sends it all to **your browser**.
     </section>
   	<section data-markdown>
       # HOW WEBSITES WORK: 1
@@ -235,7 +230,7 @@
       
       you **will need to learn this** for the module:
       
-      > A 'client' (usually a **web browser** like Chrome)—receives **files** from the server and **displays** the pages you requested by rendering the **HTML**, applying **CSS** styles to the HTML, and running any **JavaScript** programming.
+      > A 'client' (usually a **web browser** like **Chrome**)—receives **files** from the server and **displays** the pages you requested by rendering the **HTML**, applying **CSS** styles to the HTML, and running any **JavaScript** code.
     </section>
     <!-- SHARED WITH CTEC3905 -->
   	<section data-markdown>
@@ -312,18 +307,19 @@
     <section data-markdown>
       # HOW WEBSITES WORK: 6
   
-      A **hyperlink** goes to **another page**, **website**, or  
-      **specific section** on the same page marked by an HTML `id` attribute:
+      A **hyperlink** goes to **another page**, a separate **website**,  
+      or can jump to a **specific section** on the same page,  
+      marked by an HTML `id` attribute:
       
       ```html
-      &lt;a href="http://xkcd.com"&gt;Go to another website&lt;/a&gt;
-  
       &lt;a href="another-page.html"&gt;Go to another page&lt;/a&gt;
+  
+      &lt;a href="http://xkcd.com"&gt;Go to another website&lt;/a&gt;
   
       &lt;a href="#my-section"&gt;Jump to an ID on the page&lt;/a&gt;
   
       &lt;section id="my-section"&gt;
-        &lt;p&gt;A paragraph inside the section&lt;/p&gt;
+        &lt;p&gt;The link will jump to this section&lt;/p&gt;
       &lt;/section&gt;
       ```
     </section>
@@ -382,21 +378,9 @@
     
     - **YES** all file &amp; folder names **lower-case**!
     - **YES** all **resized images** in an `images` folder!
-    - **NO** Word documents or Photoshhop files!
+    - **NO** *Word* documents or *Photoshop* files!
     
     ## KEEPING **FILES TIDY** WILL HELP YOU **A LOT** :-)
-  </section>
-
-  <section data-markdown class="left-align">
-    # SUMMARY:
-    
-    ## THE **THREE FRONT-END LANGUAGES**
-    
-    - **HTML** you only need the basics
-    - **CSS** learn the syntax, just use what you need
-    - **JavaScript** optional for user interaction
-
-    Keep them **all in separate files**
   </section>
 
   <section class="left-align">
@@ -436,8 +420,20 @@
       **ALL** CSS style code should be in your `{.css}` file!  
       **NOT** in your `&lt;.html&gt;` file!
     </section>
+
   </section>
 
+  <section data-markdown class="left-align">
+    # SUMMARY:
+    
+    ## THE **THREE FRONT-END LANGUAGES**
+    
+    - **HTML** learn the few ***important tags***
+    - **CSS** learn the ***syntax***, just use what you need
+    - **JavaScript** for ***user interaction*** or some ***animations***
+
+    Keep them all **in separate files**
+  </section>
 </div>
 
   <script src="lib/js/head.min.js"></script>
