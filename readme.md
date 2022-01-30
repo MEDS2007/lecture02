@@ -24,3 +24,11 @@
 - [Summary: HTML, CSS, JavaScript](https://meds2007.github.io/lecture02/#/9)
 
 Slides created in Markdown (plus HTML5, JavaScript and CSS) using [reveal.js](https://revealjs.com/).
+
+---
+
+## TO DO
+
+- [ ] make a "Keep it Tidy" section with Tidy Code and Tidy Files
+- [ ] renumber index etc. after above
+- [ ] add guide on file structure: how to add CSS, JavaScript, image files
